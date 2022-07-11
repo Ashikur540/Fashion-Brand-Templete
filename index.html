@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!-- CSS linking  -->
     <link rel="stylesheet" href="style.css">
+    <!-- animation cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -28,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">POLICY</a>
+                            <a class="nav-link" href="#offer">OFFER</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">CONDITION</a>
@@ -60,7 +63,7 @@
         <div class="hero-img">
             <img src="Img/banner.jpg" alt="pic" class="">
         </div>
-        <div class="hero-title">
+        <div class="hero-title animate__animated wow animate__slideInRight">
             <h1>FASHION STORY</h1>
             <h1>WOMEN'S LIFESTYLE</h1>
         </div>
@@ -69,29 +72,29 @@
         <div class="fashion-title">
             <h1>FASHION TRENDS</h1>
         </div>
-        <p class="fashion-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tenetur quia error ea
+        <p class="fashion-desc ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tenetur quia error ea
             dolorem voluptatum
             reprehenderit, similique aliquam ipsa ex ab dignissimos ratione, veniam magni odio totam. Suscipit sequi
             modi asperiores consequuntur ratione.</p>
         </div>
         </div>
-        <div class="container mb-5">
+        <div class="container mb-5  ">
             <div class="row  justify-content-center">
-                <div class="col-md-4 col-11">
+                <div class="col-md-4 col-11 animate__animated wow animate__fadeInUp animate__slow	1s">
                     <div class="tranding-img">
                         <img src="Img/trend-1.jpg" alt="pic of trands">
                         <button class="btn-buy" type="button">Buy now</button>
                         <div class="overlay"></div>
                     </div>
                 </div>
-                <div class="col-md-4 col-11">
+                <div class="col-md-4 col-11 animate__animated wow animate__fadeInUp animate__slow	1s">
                     <div class="tranding-img">
                         <img src="Img/trend-2.jpg" alt="pic of trands">
                         <button class="btn-buy" type="button">Buy now</button>
                         <div class="overlay"></div>
                     </div>
                 </div>
-                <div class="col-md-4 col-11">
+                <div class="col-md-4 col-11 animate__animated wow animate__fadeInUp animate__slow	1s">
                     <div class="tranding-img">
                         <img src="Img/trend-3.jpg" alt="pic of trands">
                         <button class="btn-buy" type="button">Buy now</button>
@@ -102,13 +105,13 @@
         </div>
     </section>
     <!-- end of trends section-->
-    <section class="offer">
+    <section class="offer section" id="offer">
         <div class="row justify-content-center">
-            <div class="col-md-6 text-center col-11">
-                <img src="Img/exclusive.jpeg">
+            <div class="col-md-6 text-center col-11 ">
+                <img src="Img/exclusive.jpeg" class="animate__animated wow animate__fadeIn">
             </div>
             <div class="col-md-6 col-11">
-                <div class="box">
+                <div class="box animate__animated wow animate__slideInRight">
                     <h4>FASHION EXCLUSIVE</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad sed tenetur neque dicta, itaque
                         exercitationem consectetur nulla enim omnis a quidem. Ut voluptas atque aliquam, voluptates
@@ -129,25 +132,35 @@
 
         <div class="container">
             <div class="row justify-content-center blog-content">
-                <div class="col-md-4 text-center col-11">
+                <div class="col-md-4 text-center col-11 wow animate__animated animate__fadeInRight ">
                     <div class="blog-img ">
                         <img src="Img/blog-1.jpg" alt="blog pic">
                         <p class="m-2 my-2"> <b>New collection 50% off.</b></p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center col-11">
+                <div class="col-md-4 text-center col-11 wow animate__animated animate__fadeInRight ">
                     <div class="blog-img">
                         <img src="Img/blog-2.jpg" alt="blog pic">
                         <p class="m-2 my-2"> <b>20% cashback per purchase.</b></p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center col-11">
+                <div class="col-md-4 text-center col-11 wow animate__animated animate__fadeInRight ">
                     <div class="blog-img">
                         <img src="Img/blog-3.jpg" alt="blog pic">
                         <p class="m-2 my-2"> <b>Buy one get one free.</b></p>
                     </div>
                 </div>
             </div>
+            <!-- button -->
+            <button class="cta">
+                <span class="hover-underline-animation"> Shop now </span>
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                    viewBox="0 0 46 16">
+                    <path id="Path_10" data-name="Path 10"
+                        d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                        transform="translate(30)"></path>
+                </svg>
+            </button>
         </div>
     </section>
     <!-- end of blog  -->
@@ -205,6 +218,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+
+    <!-- wow js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- initialize -->
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
